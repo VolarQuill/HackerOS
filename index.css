@@ -1,0 +1,30 @@
+html {
+    background-color: #000000;
+    padding-bottom: 1000px;
+}
+
+p{
+    color: green;
+}
+.title{
+    color: black;
+    font-size: 6vw;
+    font-family: Courier;
+    border: solid 2px white;
+    text-align: center;
+    padding: 1vw 0.5vw 1vw 0.5vw;
+    background-color: gray;
+    border-style: solid;
+    border-width: 0.5vw;
+    border-top-color: white;
+    border-left-color: white;
+}
+.terminal{
+    background-color: gray;
+    color: black;
+    padding: 0.8vw 3vw 0.8vw 3vw;
+    font-family: Courier;
+    font-size: 3vw;
+    font-weight: bold;
+    
+}
