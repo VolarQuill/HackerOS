@@ -4,6 +4,20 @@ html {
     padding: 0;
 }
 
+#clock {
+    color: white;
+    font-size: 8vw; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 2vw;
+}
+#clock:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5vw;
+    text-decoration-color: green;
+    text-decoration-thickness: 0.2vw;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -25,8 +39,8 @@ p{
     border-width: 0.5vw;
     border-top-color: white;
     border-left-color: white;
-    border-right-color: rgb(70, 70, 70);
-    border-bottom-color: rgb(70, 70, 70);
+    border-right-color: rgb(60, 60, 60);
+    border-bottom-color: rgb(60, 60, 60);
     transition: all 0.1s ease-in-out;
     margin-right:14vw;
     margin-left: 14vw;
@@ -73,7 +87,7 @@ p{
     height: 3vw;
 }
 .search::placeholder{
-    color: rgb(65, 64, 64);
+    color: rgb(65, 64, 64); 
 }
 .search-input{
     font-size: 0.5vw;
@@ -81,4 +95,69 @@ p{
 
 .searchbutton{
     
+}
+.calculator{
+    scale: auto;
+}
+.notes{
+    scale:auto;
+} 
+.applist {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw;
+    width: 12vw; 
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.popupcontent{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    border: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: rgb(60, 60, 60);
+    border-bottom-color: rgb(60, 60, 60);
+    margin-top: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font: monospace;
+}
+
+.desc{
+    color: black;
+    font: monospace;
+    
+}
+
+.close{
+    text-align: center;
+    margin-bottom: 0
+}
+
+.webos{
+    background-color: gray;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    border: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: rgb(60, 60, 60);
+    border-bottom-color: rgb(60, 60, 60);
+    margin-bottom: 2vw;
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vw 5vw;
 }
