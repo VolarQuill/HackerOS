@@ -71,8 +71,6 @@ p{
     bottom: 0;
     right: 0;
     left: 0;
-    padding: auto;
-    margin: auto;
 } 
 
 .searchdiv{
@@ -116,12 +114,16 @@ p{
 .popup{
     display: flex;
     justify-content: center;
-    text-align: center;
+    position:absolute;
+    inset: 0;
+    margin: auto;
+    height: max-content;
+    max-width: 60vw;
 }
 
 .popupcontent{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: gray;
     margin-right: 10vw;
     margin-left: 10vw;
@@ -130,34 +132,46 @@ p{
     border-left-color: white;
     border-right-color: rgb(60, 60, 60);
     border-bottom-color: rgb(60, 60, 60);
-    margin-top: 0;
-    font-size: 2.5vw;
-    font-weight: bold;
-    font: monospace;
+    gap: 0vw;
 }
 
 .desc{
+    font-family: monospace;
+    display: block;
+    margin: 0.5vw;
     color: black;
-    font: monospace;
-    
+    font-size: 1.3vw;
 }
 
 .close{
     text-align: center;
-    margin-bottom: 0
+    margin-bottom: 0;
+    display: inline-block;
+    margin:0;
+    font-size: 1.5vw;
+    background-color: rgb(40, 40, 40);
+    padding: 0.4vw;
+    color: white;
+    font-family: monospace;
 }
 
 .webos{
-    background-color: gray;
-    margin-right: 25vw;
-    margin-left: 25vw;
-    border: solid;
+    margin:0;
+    font-family: monospace;
+    font-size: 3vw;
+    margin-left: 0.5vw;
+}
+
+.head{
+    
     border-top-color: white;
     border-left-color: white;
     border-right-color: rgb(60, 60, 60);
     border-bottom-color: rgb(60, 60, 60);
-    margin-bottom: 2vw;
-    text-align: center;
-    font-size: 4vw;
-    padding: 1vw 5vw;
+}
+
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -1,0 +1,14 @@
+.webos{
+    background-color: gray;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    border: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: rgb(60, 60, 60);
+    border-bottom-color: rgb(60, 60, 60);
+    margin-bottom: 2vw;
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vw 5vw;
+}
