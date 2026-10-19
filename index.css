@@ -112,7 +112,7 @@ p{
 }
 
 .popup{
-    display: flex;
+    display: none;
     justify-content: center;
     position:absolute;
     inset: 0;
