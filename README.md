@@ -1,5 +1,5 @@
 ## Welcome to HackerOS
-This is a tiny webos built in plain HTML, CSS, & JavaScript. Its goal is to make you feel like a hacker.
+This is a tiny WebOS built in plain HTML, CSS, & JavaScript. Its goal is to make you feel like a hacker.
 It has-
 1. A search bar
 2. live clock
