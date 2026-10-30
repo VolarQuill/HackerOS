@@ -1,3 +1,9 @@
+.titlebar {
+    cursor:move;
+    user-select: none;
+    touch-action: none;
+}
+
 html {
     background-color: #000000;
     margin: 0;
@@ -21,10 +27,6 @@ html {
 body{
     margin: 0;
     padding: 0;
-}
-
-p{
-    color: green;
 }
 
 .title{
@@ -52,13 +54,17 @@ p{
     border-bottom-color: white;
 }
 
-.terminal{
+.notes{
     background-color: gray;
     color: black;
     padding: 0.8vw 3vw 0.8vw 3vw;
-    font-family: Courier;
+    font-family: monospace;
     font-size: 3vw;
     font-weight: bold;
+}
+
+.notes:active{
+    cursor: grabbing
 }
 
 .footer{
@@ -175,3 +181,44 @@ p{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.noteswindow {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 25vh;
+    left: 30vw;
+    width: 40vw;
+    z-index: 10;
+    background-color: gray;
+    border: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: rgb(60, 60, 60);
+    border-bottom-color: rgb(60, 60, 60);
+}
+
+.notesarea {
+    display: block;
+    box-sizing: border-box;
+    width: calc(100% - 1vw);
+    height: 18vw;
+    margin: 0.5vw;
+    resize: none;
+    outline: none;
+    background-color: rgb(168, 167, 167);
+    color: black;
+    font-family: monospace;
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border: solid 0.2vw;
+    border-top-color: rgb(60, 60, 60);
+    border-left-color: rgb(60, 60, 60);
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+.notesarea::placeholder {
+    color: rgb(65, 64, 64);
+}
+

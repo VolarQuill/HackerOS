@@ -11,44 +11,46 @@
     <body>
 
         <div class="applist">
-            <div class="notes"><img></div>
             <div class="calculator"><img></div>
-            <div class="test"><img></div>
             
         </div>
 
 
         <p class="title">Welcome to HackerOS</p>
 
-        <div class="searchdiv"><input type="text" name="q"  placeholder="How to hack fbi..." required class="search">
-        <button class="searchbutton">Go</button></div>
+        <div class="searchdiv">
+        <form action="https://google.com" method="GET" target="_blank">
+        <input type="text" name="q"  placeholder="How to hack fbi..." required class="search">
+        <button class="searchbutton" type="submit">Go</button></form>
+    
+    </div>
 
         <div id="clock"></div>
 
-
-
         <div id="popup" class="popup">
-                <div id="popupcontent" class="popupcontent">
-                <div class="div1">
-                <div><h2 class="webos">Welcome to HackerOS</h2></div>
-                <div class="head"><button id="close" class="close">X</button></div>
+            <div id="popupcontent" class="popupcontent">
+                <div class="div1 titlebar" id="popuphandle">
+                    <h2 class="webos">Welcome to HackerOS</h2>
+                    <div class="head"><button id="close" class="close">X</button></div>
+                </div>
+                <p class="desc">This WebOS has one goal, and that is to make you feel like a true hacker. I'm pretty sure that it wont succeed in doing so, but whatever i guess. I hope you like it.</p>
             </div>
-                <div><p class="desc">This WebOS has one goal, and that is to make you feel like a true hacker. I'm pretty sure that it wont succeed in doing so, but whatever i guess. I hope you like it.</p></div>
-            </div>  
-        </div>   
+        </div>
 
+        <div id="noteswindow" class="noteswindow">
+            <div class="div1 titlebar" id="noteshandle">
+                <h2 class="webos">Notes</h2>
+                <div class="head"><button id="notesclose" class="close">X</button></div>
+            </div>
+            <textarea class="notesarea" placeholder="Enter your notes..."></textarea>
+        </div>
 
         <div class="footer">
-            <button class="terminal">TERMINAL</button>
+            <div class="window">
+                <button class="notes" id="notesbtn">NOTES</button>
+            </div>
         </div>
-
-        <div> 
-            <p></p>
-        </div>
-
 
         <script src="index.js"></script>
     </body>
-
-
-</html> 
+</html>
